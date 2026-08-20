@@ -2,8 +2,6 @@
 
 ## Project Overview
 
-[#project-overview](#project-overview)
-
 **Project Title**: SQL Murder Mystery
 **Level**: Intermediate
 **Database**: `sql_murder_mystery` (PostgreSQL)
@@ -144,7 +142,6 @@ Cross-referencing the plate number against the joined identity table narrows the
 
 ## Bonus Challenge: Finding the Mastermind
 
-[#bonus-challenge-finding-the-mastermind](#bonus-challenge-finding-the-mastermind)
 
 Solving the murder isn't the end of the case — Jeremy Bower's own interview transcript reveals he was hired by someone else. Completed in the query budget of 22 or fewer.
 
