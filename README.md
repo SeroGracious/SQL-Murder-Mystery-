@@ -12,7 +12,6 @@ This project demonstrates SQL investigative querying skills using the classic "S
 
 ## Objectives
 
-[#objectives](#objectives)
 
 1. **Query a relational crime database**: Navigate multiple linked tables (`crime_scene_report`, `person`, `interview`, `get_fit_now_member`, `get_fit_now_check_in`, `drivers_license`, `facebook_event_checkin`) to trace a case from a single lead to a solved crime.
 2. **Filtering & Pattern Matching**: Use `WHERE`, `LIKE`, and `ORDER BY` to isolate relevant records from noisy tables (e.g. narrowing down witnesses, matching partial plate numbers).
@@ -23,11 +22,7 @@ This project demonstrates SQL investigative querying skills using the classic "S
 
 ## Project Structure
 
-[#project-structure](#project-structure)
-
 ### 1. Retrieve the Crime Scene Report
-
-[#1-retrieve-the-crime-scene-report](#1-retrieve-the-crime-scene-report)
 
 **Objective**: Pull the report matching a murder on January 15, 2018 in SQL City.
 
@@ -42,8 +37,6 @@ AND city = 'SQL City';
 The report reveals security footage showing two witnesses: one who lives at the *last house on Northwestern Dr*, and one named *Annabel* who lives on *Franklin Ave*.
 
 ### 2. Identify the Witnesses
-
-[#2-identify-the-witnesses](#2-identify-the-witnesses)
 
 **Task**: Find the first witness — the last house on Northwestern Dr (i.e. the highest address number on that street).
 
@@ -65,7 +58,6 @@ AND address_street_name = 'Franklin Ave';
 
 ### 3. Review Witness Interviews
 
-[#3-review-witness-interviews](#3-review-witness-interviews)
 
 **Objective**: Pull both witnesses' interview transcripts.
 
@@ -79,7 +71,6 @@ WHERE person_id IN (14887, 16371);
 
 ### 4. Investigate the Gym Membership Clue
 
-[#4-investigate-the-gym-membership-clue](#4-investigate-the-gym-membership-clue)
 
 **Objective**: Find gold members with a membership ID starting with "48Z".
 
@@ -105,7 +96,6 @@ SELECT * FROM Suspects;
 
 ### 5. Cross-reference Check-in Records
 
-[#5-cross-reference-check-in-records](#5-cross-reference-check-in-records)
 
 **Objective**: Confirm which suspect(s) checked in at the gym on January 9th, per Annabel's account.
 
@@ -119,7 +109,6 @@ AND membership_id IN ('48Z7A', '48Z55');
 
 ### 6. Trace the Getaway Car
 
-[#6-trace-the-getaway-car](#6-trace-the-getaway-car)
 
 **Objective**: Search driver's licenses for a plate number containing "H42W".
 
@@ -148,8 +137,6 @@ OR plate_number LIKE '%H42W';
 ```
 
 ### Solution: The Killer
-
-[#solution-the-killer](#solution-the-killer)
 
 Cross-referencing the plate number against the joined identity table narrows the match down to a single suspect:
 
