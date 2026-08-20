@@ -201,8 +201,6 @@ WHERE id = 99716;
 
 ## Findings
 
-[#findings](#findings)
-
 - The crime scene report and witness interviews provided the initial thread (gym bag, membership prefix, partial plate number).
 - CTAS was used to snapshot a working suspect pool (`Suspects`) rather than re-running the same filter repeatedly.
 - A `LEFT JOIN` between `drivers_license` and `person` was necessary because vehicle/physical data and identity data lived in separate tables with no direct name field.
@@ -211,27 +209,21 @@ WHERE id = 99716;
 
 ## Conclusion
 
-[#conclusion](#conclusion)
-
 This project demonstrates core investigative SQL skills: filtering with `WHERE` and `LIKE`, sorting with `ORDER BY`, persisting intermediate results with CTAS, and joining across tables to reconcile identity, vehicle, and behavioral data. It also shows how to work a case incrementally — each query either eliminates a candidate or adds a new clue — mirroring how SQL is used in real investigative and analytical workflows.
 
 ## How to Use
-
-[#how-to-use](#how-to-use)
 
 1. **Get the database**: The SQL Murder Mystery schema and data are publicly available (originally built by Knight Lab) — load the `.sql` schema/data files into a PostgreSQL instance named e.g. `sql_murder_mystery`.
 2. **Run the investigation queries**: Execute the queries in this README (or the accompanying `.sql` file) in order, starting from the crime scene report.
 3. **Verify your answer**: Use an `INSERT` statement with your suspect's ID against the game's validation table (per the mystery's built-in check) to confirm the correct killer and mastermind.
 4. **Explore further**: Try re-solving the case in fewer queries, or extend the investigation to see what other clues the database supports.
 
-## Author — [Your Name]
-
-[#author-your-name](#author-your-name)
+## Author — Oriomah Ogheneserome Gracious
 
 This project showcases SQL skills essential for investigative querying, filtering, joins, and CTAS-based data analysis. For more content on SQL and data analysis, connect with me through the following channels:
 
-- **LinkedIn**: [Add your LinkedIn URL]
-- **GitHub**: [Add your GitHub profile URL]
-- **Portfolio**: [Add your portfolio site]
+- **LinkedIn**: 
+- **GitHub**: 
+- **Portfolio**: 
 
 Thank you for checking out this project!
